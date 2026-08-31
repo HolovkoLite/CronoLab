@@ -248,7 +248,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
             <summary>Il lavoro viene salvato automaticamente?</summary>
             <div class="tutorial-answer">
               <p>
-                No. Il progetto rimane nel browser soltanto mentre lavori. Usa regolarmente <strong>Esporta</strong>:
+                No. Il progetto rimane nel browser soltanto mentre lavori. Usa regolarmente la funzione <strong>Esporta</strong>:
                 <strong>Esporta HTML interattivo</strong> crea la linea pronta da condividere e riapribile nell’editor,
                 mentre <strong>Esporta JSON</strong> crea una copia strutturata completa del progetto, utile anche come backup.
               </p>
@@ -331,7 +331,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
               <p>
                 Puoi usare giorno, mese e anno; solo anno; intervallo; secolo; oppure nessuna data.
                 Sono disponibili date a.C., indicazione approssimativa ed etichetta personalizzata.
-                L’etichetta cambia ciò che si legge, ma non il punto usato per l’ordinamento.
+                L’etichetta <strong>cambia solo ciò che si legge</strong>, ma non il punto usato per l’ordinamento.
               </p>
             </div>
           </details>
@@ -376,7 +376,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
             <div class="tutorial-answer">
               <p>
                 Ogni capsula può appartenere a <strong>più categorie</strong>. Nel visualizzatore le categorie usate
-                diventano filtri combinabili; una capsula resta visibile se appartiene ad almeno una delle categorie
+                diventano filtri combinabili; una capsula è visibile anche se non appartiene a una delle categorie
                 selezionate. Una capsula nuova è inizialmente senza categoria. Il colore della capsula segue questa priorità:
                 <strong>colore personalizzato, poi colore del tipo</strong>. Il colore della categoria non sostituisce
                 quello della capsula.
@@ -437,7 +437,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
               <p>
                 Inserisci sempre il <strong>testo alternativo</strong>. Se l’interruttore è attivo, didascalia
                 e fonte restano sotto l’immagine; se è disattivato, compaiono in sovrimpressione dopo circa
-                un secondo di permanenza del mouse e subito con la tastiera. Nel visualizzatore immagini singole,
+                un secondo di permanenza del mouse e subito con la tastiera. Immagini singole,
                 caroselli e griglie si possono ingrandire a tutto schermo.
               </p>
             </div>
@@ -479,7 +479,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
                 <strong>collegamenti tra capsule</strong> creano rimandi interni alla linea; le
                 <strong>fonti</strong> formano una breve bibliografia. I rimandi tra capsule sono biunivoci
                 per impostazione predefinita, cioè vengono creati in entrambe le direzioni, ma puoi renderli
-                unidirezionali. È possibile personalizzare le etichette e inserire fino a quattro collegamenti.
+                unidirezionali. È possibile personalizzare le etichette; ciascuna capsula può contenere fino a quattro collegamenti verso un'altra capsula.
               </p>
             </div>
           </details>
@@ -489,7 +489,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
             <div class="tutorial-answer">
               <p>
                 Nel menu <strong>Strumenti → Glossario</strong> puoi associare una breve definizione a parole
-                che potrebbero risultare difficili. Nel visualizzatore i termini vengono evidenziati e la spiegazione
+                che potrebbero risultare difficili o ritieni importanti. Nel visualizzatore i termini vengono evidenziati e la spiegazione
                 è disponibile senza abbandonare la linea. Nel PDF il Glossario può diventare un’appendice finale.
               </p>
             </div>
@@ -510,7 +510,8 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
                 Sono disponibili <strong>domanda aperta, scelta multipla, cloze, vero/falso, riordino</strong>
                 e <strong>abbinamenti</strong>. Il cloze nasconde parole in un testo; nel riordino gli elementi
                 vengono mescolati; negli abbinamenti ogni elemento deve essere associato alla voce corretta.
-                Puoi aggiungere suggerimento e spiegazione.
+                Puoi aggiungere un suggerimento, che compare nel caso di risposta errata, e spiegazione, che compare dopo
+                che è stata data la risposta corretta.
               </p>
             </div>
           </details>
@@ -521,18 +522,8 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
               <p>
                 Nasconde temporaneamente le capsule successive finché l’attività non viene completata correttamente.
                 Per una domanda aperta, lo sblocco avviene quando viene mostrata la risposta. Questa funzione può
-                trasformare la linea in un percorso guidato, ma va usata con misura.
-              </p>
-            </div>
-          </details>
-
-          <details class="tutorial-faq">
-            <summary>Come si progettano attività utili e non solo di controllo?</summary>
-            <div class="tutorial-answer">
-              <p>
-                Alterna domande di memoria ad attività che chiedano di <strong>confrontare, ordinare, formulare
-                ipotesi o collegare cause e conseguenze</strong>. Colloca l’esercizio vicino ai contenuti necessari
-                per rispondere e usa la spiegazione finale per chiarire il ragionamento, non soltanto la soluzione.
+                trasformare la linea in un percorso guidato. Finché una domanda è bloccata i collegamenti tra una capsula
+                precedente e una successiva alla domanda bloccata non funzionano.
               </p>
             </div>
           </details>
@@ -589,8 +580,7 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
               <p>
                 Usa <strong>Anteprima</strong> e prova entrambe le visualizzazioni. Verifica apertura delle capsule,
                 domande bloccanti, filtri, ricerca, fasce dei periodi, Mappa di navigazione, Visione sincronica,
-                immagini ingrandite, collegamenti, audio, video e mappe. Fai almeno una prova anche su uno
-                schermo piccolo.
+                immagini ingrandite, collegamenti, audio, video e mappe.
               </p>
             </div>
           </details>
@@ -639,12 +629,16 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
                 <strong>Esporta PDF</strong> offre linea multipagina, poster panoramico e Visione sincronica.
                 Puoi scegliere A4, A3 o A2, orientamento, capsule sintetiche o complete, tutte le capsule o
                 il Percorso essenziale, versione studente/docente, Includi immagini, Glossario in appendice,
-                Scala di grigi e Intestazione e numeri di pagina.
+                Scala di grigi e Intestazione e numeri di pagina. 
+              </p>
+              <p>
+                La versione docente include le risposte alle capsule domanda, mentre suggerimenti e spiegazioni sono visibili.
+                Nella versione studente le capsule domande sono visibili, ma la risposta corretta, suggerimenti e spiegazioni sono nascoste. 
               </p>
               <p>
                 Nella linea multipagina le capsule restano intere quando possibile; quelle più lunghe di una pagina
-                sono divise soltanto tra blocchi. Il poster viene bloccato se risulterebbe troppo denso.
-                Dopo il controllo, usa <strong>Stampa o salva PDF</strong> e scegli “Salva come PDF” nel browser.
+                sono divise soltanto tra blocchi. Il poster viene bloccato se risulta troppo denso.
+                Controlla il file prodotto, usa <strong>Stampa o salva PDF</strong> e scegli “Salva come PDF” nel browser.
               </p>
             </div>
           </details>
@@ -725,14 +719,28 @@ body.cronolab-editor-dark .icon-button.danger{background:#311c22;color:#f09aaa}b
             <summary>Come rendere la linea più accessibile e leggibile?</summary>
             <div class="tutorial-answer">
               <p>
-                Usa testi alternativi per le immagini, titoli brevi, paragrafi chiari, un contrasto sufficiente
-                tra testo e sfondo e collegamenti con etichette comprensibili. Non affidare un significato soltanto
-                al colore. Evita capsule troppo dense e verifica che tastiera, schermo piccolo e PDF offrano
+                Usa testi alternativi per le immagini, titoli brevi, paragrafi chiari e collegamenti con etichette comprensibili. 
+                Non affidare un significato soltanto al colore. Evita capsule troppo dense e verifica che tastiera, schermo piccolo e PDF offrano
                 comunque un percorso comprensibile.
               </p>
             </div>
           </details>
 
+          <details class="tutorial-faq">
+            <summary>Posso usare liberamente CronoLab?</summary>
+            <div class="tutorial-answer">
+              <p>
+                CronoLab è un progetto ideato e realizzato da Tommaso Sereni. 
+                Può essere <strong>utilizzato liberamente</strong> per scopi personali, didattici e professionali.
+              </p>
+              <p>
+                Chi utilizza CronoLab è responsabile dei contenuti che crea, modifica, importa, esporta o condivide tramite lo strumento. 
+                L’autore di CronoLab <strong>non è responsabile dei contenuti prodotti dagli utenti né dell’uso che ne viene fatto</strong>.
+                CronoLab viene messo a disposizione liberamente e può essere utilizzato e condiviso, mantenendo il riferimento al progetto e al suo autore.
+              </p>
+            </div>
+          </details>
+          
           <details class="tutorial-faq">
             <summary>Come posso segnalare un errore o chiedere informazioni?</summary>
             <div class="tutorial-answer">
